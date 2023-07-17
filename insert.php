@@ -10,14 +10,14 @@
 
 // データベースへの接続情報
 $servername = "localhost";
-$username = "KAZUYAARIMORI";
+$username = "kazuyaarimori06";
 $password = "1582kazuya";
-$dbname = "b-booking";
+$dbname = "kazuyaarimori06_b-booking";
 
 try {
   // データベースに接続
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  //$pdo = new PDO('mysql:dbname=kazuyaarimori06_b-booking;charset=utf8;host=mysql57.kazuyaarimori06.sakura.ne.jp','kazuyaarimori06','1582kazuya');
+  //$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $pdo = new PDO('mysql:dbname=kazuyaarimori06_b-booking;charset=utf8;host=mysql57.kazuyaarimori06.sakura.ne.jp','kazuyaarimori06','1582kazuya');
   // エラーレポートを表示
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
